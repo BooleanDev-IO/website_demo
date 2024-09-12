@@ -1,14 +1,11 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:particles_fly/particles_fly.dart';
 import 'package:widget_and_text_animator/widget_and_text_animator.dart';
 
 class LoadingScreen extends StatefulWidget {
-  PageController? controller;
-  LoadingScreen({super.key, this.controller});
+  PageController controller;
+  LoadingScreen({super.key, required this.controller});
 
   @override
   State<LoadingScreen> createState() => _LoadingScreenState();
